@@ -8,6 +8,15 @@ def create_user(email, password):
     new_user = User(email=email, password=password)
     return new_user
 
+def get_users():
+    """Return all users from database."""
+    return User.query.all()
+
+def get_user_by_id(user_id):
+    """Gets a user object from database using primary key."""
+    return User.query.get(user_id)
+    
+
 def create_movie(title, overview, release_date, poster_path):
     """Creates a new movie object and returns it."""
     new_movie = Movie(
@@ -17,6 +26,14 @@ def create_movie(title, overview, release_date, poster_path):
         poster_path=poster_path
     )
     return new_movie
+
+def get_movies():
+    """Return all movies from database."""
+    return Movie.query.all()
+
+def get_movie_by_id(movie_id):
+    """Gets a movie object from database using primary key."""
+    return Movie.query.get(movie_id)
 
 def create_rating(user, movie, score):
     """Creates a new movie object and returns it."""

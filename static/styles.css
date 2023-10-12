@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    list-style-position: inside;
+    background-color: beige;
+}
+
+form {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style-type: square;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    /* background-color: #f0f0f0; */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li a {
+    text-decoration: aqua;
+    color: #333;
+    font-weight: bold;
+}
